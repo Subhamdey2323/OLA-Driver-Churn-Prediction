@@ -1,9 +1,9 @@
 # OLA-Driver-Churn-Analysis&Prediction
 
-Business Problem
+## Business Problem
 Ola, a ride-sharing platform, is facing challenges with driver churn, impacting operational efficiency and incurring high recruitment costs. Retaining drivers is crucial for sustained growth and cost-effectiveness. The Analytics Department at Ola aims to predict driver churn based on various attributes, including demographics, tenure, and performance data, to proactively implement retention strategies.
 
-Approach
+## Approach
 Exploratory Data Analysis (EDA)
 Loading and Inspecting the Dataset:
 Checked the dataset's structure and characteristics.
@@ -52,7 +52,8 @@ Machine Learning Model
 Precision and recall showed trade-offs, influencing the choice of the model.
 Class imbalance treatment impacted precision, recall, and F1-score differently.
 Gradient Boosting showed improved recall, while Random Forest showed improved precision after class imbalance treatment.
-Recommendations
+
+## Recommendations
 Retention Strategies:
 
 Prioritize retention strategies based on precision or recall, considering cost implications and effectiveness.
@@ -62,5 +63,5 @@ Focus on improving quarterly ratings and income stability to enhance driver sati
 Continuous Monitoring:
 
 Implement a continuous monitoring system to track driver attributes influencing churn.
-Conclusion
+## Conclusion
 The analysis provides insights into factors contributing to driver churn and predicts potential churn based on various attributes. Implementation of retention strategies and continuous monitoring can help Ola reduce driver churn, enhance driver satisfaction, and optimize recruitment costs. Continuous evaluation and adaptation of strategies will be crucial for sustained success.
