@@ -4,7 +4,7 @@
 Ola, a ride-sharing platform, is facing challenges with driver churn, impacting operational efficiency and incurring high recruitment costs. Retaining drivers is crucial for sustained growth and cost-effectiveness. The Analytics Department at Ola aims to predict driver churn based on various attributes, including demographics, tenure, and performance data, to proactively implement retention strategies.
 
 ## Approach
-Exploratory Data Analysis (EDA)
+### Exploratory Data Analysis (EDA)
 Loading and Inspecting the Dataset:
 Checked the dataset's structure and characteristics.
 Data Processing and Feature Engineering:
@@ -33,7 +33,7 @@ Treated class imbalance using various techniques.
 Standardization:
 
 Standardized the training data.
-Machine Learning Model
+### Machine Learning Model
 Ensemble Learning:
 
 Utilized Bagging (Random Forest Classifier) and Boosting (Gradient Boosting) methods.
@@ -41,7 +41,8 @@ Explored Random Forest and XGBoosting classifiers.
 Results Evaluation:
 
 Evaluated models using Classification Report and ROC AUC curve.
-Observations from Results
+
+## Observations from Results
 Exploratory Data Analysis
 July received the maximum number of drivers in 8 years.
 Joining of drivers increased by about 500% after 2017.
