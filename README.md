@@ -1,68 +1,36 @@
-# OLA-Driver-Churn-Analysis&Prediction
+# 🚖 OLA Driver Churn Prediction
 
-## Business Problem
-Ola, a ride-sharing platform, is facing challenges with driver churn, impacting operational efficiency and incurring high recruitment costs. Retaining drivers is crucial for sustained growth and cost-effectiveness. The Analytics Department at Ola aims to predict driver churn based on various attributes, including demographics, tenure, and performance data, to proactively implement retention strategies.
+A machine learning web application to predict whether a driver working for OLA is likely to **churn (leave)** the organization based on their personal, professional, and performance-related attributes.
 
-## Approach
-### Exploratory Data Analysis (EDA)
-Loading and Inspecting the Dataset:
-Checked the dataset's structure and characteristics.
-Data Processing and Feature Engineering:
-Converted date-like features to their respective data types.
-Checked for missing values and prepared data for KNN Imputation using numerical features.
-Aggregated data to remove multiple occurrences of the same driver data.
-Feature Engineering Steps
-Create Columns:
+Built using:
+- 🧠 Scikit-learn (or XGBoost for modeling)
+- 📊 Pandas for data processing
+- 🎨 Streamlit for the user interface
 
-Created a column indicating whether the quarterly rating has increased for each driver.
-Created a target variable column indicating whether the driver has left the company.
-Created a column indicating whether the monthly income has increased for each driver.
-Statistical Summary:
+---
 
-Checked the statistical summary of the derived dataset.
-Correlation Analysis:
+## 📌 Project Objective
 
-Checked correlation among independent variables.
-One-Hot Encoding:
+Employee churn is a major concern in fleet and ride-sharing companies like OLA. This project aims to **predict driver churn** using historical data and provide a simple, interactive web interface where HR managers or analysts can enter driver details and get immediate predictions.
 
-Applied one-hot encoding to categorical variables.
-Class Imbalance Treatment:
+---
 
-Explored the impact of class imbalance on model performance.
-Treated class imbalance using various techniques.
-Standardization:
+## 🚀 Features
 
-Standardized the training data.
-### Machine Learning Model
-Ensemble Learning:
+- Predicts churn based on input driver details.
+- Interactive UI using **Streamlit**.
+- Takes into account multiple factors:
+  - Age, Gender, Education
+  - Business metrics (Income, Business Value)
+  - Ratings, Designation, Promotions
+  - Join date & number of cities worked in
 
-Utilized Bagging (Random Forest Classifier) and Boosting (Gradient Boosting) methods.
-Explored Random Forest and XGBoosting classifiers.
-Results Evaluation:
+---
 
-Evaluated models using Classification Report and ROC AUC curve.
+## 🧠 ML Model
 
-## Observations from Results
-Exploratory Data Analysis
-July received the maximum number of drivers in 8 years.
-Joining of drivers increased by about 500% after 2017.
-City C20 was used by the most drivers.
-Grade 2 was received by most drivers.
-Quarterly Rating 1 was predominant among drivers.
-Machine Learning Model
-Precision and recall showed trade-offs, influencing the choice of the model.
-Class imbalance treatment impacted precision, recall, and F1-score differently.
-Gradient Boosting showed improved recall, while Random Forest showed improved precision after class imbalance treatment.
+- Preprocessed data with necessary encoding and feature engineering.
+- Trained using `XGBoostClassifier` (or similar) for better performance on imbalanced datasets.
+- Model and preprocessor are saved using `pickle`.
 
-## Recommendations
-Retention Strategies:
-
-Prioritize retention strategies based on precision or recall, considering cost implications and effectiveness.
-Employee Engagement:
-
-Focus on improving quarterly ratings and income stability to enhance driver satisfaction.
-Continuous Monitoring:
-
-Implement a continuous monitoring system to track driver attributes influencing churn.
-## Conclusion
-The analysis provides insights into factors contributing to driver churn and predicts potential churn based on various attributes. Implementation of retention strategies and continuous monitoring can help Ola reduce driver churn, enhance driver satisfaction, and optimize recruitment costs. Continuous evaluation and adaptation of strategies will be crucial for sustained success.
+---
